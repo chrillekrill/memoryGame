@@ -1,0 +1,73 @@
+body {
+    background-color: skyblue;
+}
+
+#playing-field {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+
+#play-area {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    width: 880px;
+    height: 800px;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-size: 30px;
+    display: flex;
+    margin: auto;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 140px;
+    background-color: greenyellow;
+}
+
+.cardFlipped {
+    font-size: 0;
+    display: flex;
+    margin: auto;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 140px;
+    background-color: greenyellow;
+    perspective: 1000px;
+}
+
+.failMessage {
+    width:880px;
+    height: 800px;
+    font-size: 500px;
+    position: absolute;
+    opacity: 0.5;
+    -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.wonMessage {
+    display: flex;
+    width:880px;
+    height: 800px;
+    font-size: 400px;
+    position: absolute;
+    -webkit-text-fill-color: green; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    width: 70px;;
+    height: 50px;
+}

@@ -72,7 +72,7 @@ function checkLoss() {
 function checkCards(cardOne, cardTwo){
     if(cardOne.innerHTML === cardTwo.innerHTML) {
         score.innerHTML++;
-        if(score.innerHTML > 1) {
+        if(score.innerHTML >= 10) {
             checkWin();
         } else {
             cardPickAmmount = 2;
